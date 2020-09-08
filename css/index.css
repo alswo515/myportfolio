@@ -45,23 +45,23 @@ html,
   transform: translateY(-50%);
 }
 
-#header .nav .depth1 > li {
+#header .nav .depth1>li {
   display: inline-block;
 }
 
-#header .nav .depth1 > li > a {
+#header .nav .depth1>li>a {
   font-size: 18px;
   color: #fff;
   padding: 0px 30px;
 }
 
-#header .nav .depth1 > li > a:hover {
+#header .nav .depth1>li>a:hover {
   display: inline-block;
   transform: scale(1.2);
   transition: all 0.5s;
 }
 
-#header .nav .depth1 > li.on > a {
+#header .nav .depth1>li.on>a {
   transform: scale(1.2);
   display: inline-block;
 }
@@ -540,70 +540,98 @@ ul.gallery {
   position: relative;
 }
 
+
 .skillContainer p {
   font-size: 20px;
   font-weight: bold;
   text-align: right;
 }
 
-.skillContainer p:nth-child(2) {
-  position: absolute;
-  top: -3px;
-  left: 15px;
-}
 
-.skillContainer {
-  height: 100%;
-  text-align: left;
-}
 
-.skillContainer > div {
-  width: 100%;
-  margin: 10px 0;
+.skillContainer>div {
+  width: 60%;
+  margin: 10px auto;
+  /* border: 1px solid #000; */
 }
 
 .skillContainer .score {
-  height: 60px;
-  width: 90%;
-  padding-bottom: 50px;
   display: inline-block;
+  height: 20px;
+  width: 100%;
+  /* background: red; */
   position: relative;
 }
 
 .skillContainer .myscore {
-  height: 60px;
-  width: 0%;
-  line-height: 60px;
-  text-align: right;
-  display: inline-block;
-  font-size: 20px;
-  padding-right: 10px;
+  /* height: 0%; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
+  color: #000;
 }
 
+.skillContainer .myscore p:nth-child(2) {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  color: #000;
+  font-size: 16px;
+}
+
+
+
+
+
 .skillContainer .html .myscore {
-  background: #777;
+  background: red;
+  box-shadow: teal 3px 3px 3px;
+  border-right: 10px solid transparent;
   animation: htmlscore 1s both;
+  position: absolute;
+  top: 40px;
+  left: 0;
 }
 
 .skillContainer .css .myscore {
-  background: #777;
+  background: blue;
+  box-shadow: teal 3px 3px 3px;
+  border-right: 10px solid transparent;
   animation: cssscore 1s both 0.5s;
+  position: absolute;
+  top: 100px;
+  left: 0;
 }
 
 .skillContainer .js .myscore {
-  background: #777;
+  background: yellow;
+  box-shadow: teal 3px 3px 3px;
+  border-right: 10px solid transparent;
   animation: jsscore 1s both 1s;
+  position: absolute;
+  top: 160px;
+  left: 0;
 }
 
 .skillContainer .jq .myscore {
-  background: #777;
+  background: orange;
+  box-shadow: teal 3px 3px 3px;
+  border-right: 10px solid transparent;
   animation: jqscore 1s both 1.5s;
+  position: absolute;
+  top: 220px;
+  left: 0;
 }
 
 .skillContainer .react .myscore {
-  background: #777;
+  background: skyblue;
+  box-shadow: teal 3px 3px 3px;
   animation: reactscore 1s both 2s;
+  position: absolute;
+  top: 280px;
+  left: 0;
 }
 
 @keyframes htmlscore {
