@@ -200,9 +200,9 @@
 
 
     var sct = 0;
+    var skillTop = $('#skills').offset().top;
     $(window).scroll(function () {
         sct = $(this).scrollTop();
-
         if (sct >= winHeight) {
             $(".header-outer").css({
                 background: 'rgba(0,0,0,1)'
@@ -212,7 +212,11 @@
                 background: 'rgba(0,0,0,0.5)'
             });
         }
-
+        if (sct >= skillTop) {
+            $('.skillContainer').stop().fadeIn(300);
+        } else {
+            $('.skillContainer').stop().fadeOut(300);
+        }
         //scrollTop() 값이 100이사잉 되면 맨위로 버튼보이고 ,100미만이면 숨기기
         if (sct >= 100) {
             $('.gotop').addClass('on').stop().animate({
@@ -271,12 +275,7 @@
     });
 
 
-    $('textarea').on('keyup', function () {
-        var maxlen = 10
-        var count = $(this).val().length
-        var remain = maxlen - count
-        $(this).next().text(remain)
-    })
+
 
 
 
