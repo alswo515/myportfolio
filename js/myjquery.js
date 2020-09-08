@@ -215,7 +215,7 @@
         if (sct >= skill) {
             $('.skillContainer').stop().fadeIn(300);
         } else {
-            $('.skillContainer').show();
+            $('.skillContainer').stop().fadeOut(300);
         }
         //scrollTop() 값이 100이사잉 되면 맨위로 버튼보이고 ,100미만이면 숨기기
         if (sct >= 100) {
