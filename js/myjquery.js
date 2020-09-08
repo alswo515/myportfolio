@@ -200,7 +200,7 @@
 
 
     var sct = 0;
-    var skillTop = $('#skills').offset().top;
+    var skill = $('#skills').offset().top;
     $(window).scroll(function () {
         sct = $(this).scrollTop();
         if (sct >= winHeight) {
@@ -212,10 +212,10 @@
                 background: 'rgba(0,0,0,0.5)'
             });
         }
-        if (sct >= skillTop) {
+        if (sct >= skill) {
             $('.skillContainer').stop().fadeIn(300);
         } else {
-            $('.skillContainer').stop().fadeOut(300);
+            $('.skillContainer').show();
         }
         //scrollTop() 값이 100이사잉 되면 맨위로 버튼보이고 ,100미만이면 숨기기
         if (sct >= 100) {
