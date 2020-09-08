@@ -228,6 +228,21 @@
             }, 500)
         }
     });
+    //섹션에 마우스휠이벤트
+    $('.section').on('mousewheel', function (event, delta) {
+        if (delta > 0) {
+            var prev = $(this).prev().top
+            $('html,body').stop().animate({
+                scrollTop: prev
+            }, 800)
+        } else if (delta < 0) {
+            var next = $(this).next().offset().top
+            $('html,body').stop().animate({
+                scrollTop: prev
+            }, next)
+        }
+
+    })
 
     $('.gotop').on('click', function () {
         $('body, html').stop().animate({
