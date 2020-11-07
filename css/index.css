@@ -111,13 +111,13 @@ html,
 }
 
 .section-outer .section:nth-child(1) .slide2 {
-  background-image: url(../img/외부\ 광고판.jpg);
+  background-image: url(../images/외부광고판.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .section-outer .section:nth-child(1) .slide3 {
-  background-image: url(../img/우산메인\ 포트폴리오.jpg);
+  background-image: url(../images/우산리뉴얼.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,21 +157,7 @@ html,
   right: 10%;
 }
 
-/* 동그라미 버튼 */
-/* .slide-outer .slick-dots { 
-    position:absolute; bottom:20px; width:100%;
-    text-align:center }
-.slide-outer .slick-dots li {
-    display:inline-block; }    
-.slide-outer .slick-dots li button {
-    width:15px; height:15px; border-radius:50%;
-    background:#fff; text-indent:-99999px;
-    overflow:hidden; margin:0 5px; 
-}
-.slide-outer .slick-dots li.slick-active button { 
-    background:#f00; width:40px; 
-    border-radius:50px
-} */
+
 
 /* 막대(bar)버튼 애니메이션 */
 .slide-outer .slick-dots {
@@ -417,10 +403,16 @@ ul.gallery {
 .portfolio ul.gallery li {
   float: left;
   width: 25%;
-  height: 45%;
+  height: 390px;
   overflow: hidden;
   padding: 10px 10px 0px;
   margin-bottom: 10px;
+}
+
+.portfolio ul.gallery li .webdesign {
+}
+.portfolio ul.gallery li img{
+  width: 100%;
 }
 
 /* 갤러리 팝업박스 */
@@ -689,8 +681,8 @@ ul.gallery {
   }
 }
 
-.section-outer .section:nth-child(4) {
-  background-image: url(../img/Contact_header_2880x1000px.jpg);
+.section-outer .section:nth-child(5) {
+  background-image: url(../images/Contact_header_2880x1000px.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

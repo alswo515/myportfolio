@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/rwdVertical.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
@@ -41,6 +41,7 @@
                         <li><a href="#aboutme">About Me</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#skills2">Skills2</a></li>
                         <li><a href="#contact">Contact Me</a></li>
                     </ul>
                 </nav>
@@ -58,7 +59,7 @@
                             <div class="bag">
                             </div>
                             <div>
-                                <img src="img/전신사진.png" alt="">
+                                <img src="images/전신사진.png" alt="">
                             </div>
                             <div class="bir">
                                 <div class="myporfill">
@@ -106,21 +107,21 @@
                 <div class="portfolio row">
                     <!-- <h2>PORTFOLIO</h2> -->
                     <ul class="gallery cf">
-                        <li><a href="http://www.daum.net"><img src="img/광일축제 2차.jpg" alt="프로젝트1"></a></li>
-                        <li><a href="http://www.naver.com"><img src="img/권하지도-받지도-마세요.jpg" alt="프로젝트2"></a></li>
-                        <li><a href="http://www.daum.net"><img src="img/웹디.jpg" alt="프로젝트3"></a></li>
-                        <li><a href="http://www.naver.com"><img src="img/방사능-인포-그라피2안--1.jpg" alt="프로젝트4"></a></li>
-                        <li><a href="http://www.daum.net"><img src="img/1234123.jpg" alt="프로젝트5"></a></li>
-                        <li><a href="http://www.naver.com"><img src="img/초정탄산수21334.jpg" alt="프로젝트6"></a></li>
-                        <li><a href="http://www.daum.net"><img src="img/aveanges.JPG" alt="프로젝트7"></a></li>
-                        <li><a href="http://www.naver.com"><img src="img/벌 느낌수정.jpg" alt="프로젝트8"></a></li>
+                        <li><a href="http://www.daum.net"><img src="images/광일축제 2차.jpg" alt="프로젝트1"></a></li>
+                        <li><a href="http://www.naver.com"><img src="images/권하지도-받지도-마세요.jpg" alt="프로젝트2"></a></li>
+                        <li><a href="http://www.daum.net"><img class="webdesign" src="images/웹디.jpg" alt="프로젝트3"></a></li>
+                        <li><a href="http://www.naver.com"><img src="images/방사능-인포-그라피2안--1.jpg" alt="프로젝트4"></a></li>
+                        <li><a href="http://www.daum.net"><img src="images/1234123.jpg" alt="프로젝트5"></a></li>
+                        <li><a href="http://www.naver.com"><img src="images/초정탄산수21334.jpg" alt="프로젝트6"></a></li>
+                        <li><a href="http://www.daum.net"><img src="images/aveanges.JPG" alt="프로젝트7"></a></li>
+                        <li><a href="http://www.naver.com"><img src="images/벌 느낌수정.jpg" alt="프로젝트8"></a></li>
                     </ul>
                     <div class="galleryPopup">
                         <div class="popupList">
                             <div>
                                 <a href="" target="_blank"><img src="" alt=""></a>
                             </div>
-                            <button class="close">
+                            <button type="button" class="close">
                                 <span class="blind">닫기</span>
                                 <i class="fas fa-times-circle"></i>
                             </button>
@@ -137,14 +138,14 @@
 
             <!-- <div class="slide-outer2 row">
                 <ul class="slide-inner2">
-                    <li><a href="#"><img src="img/img_topplace01.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/img_topplace02.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/img_topplace03.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/img_topplace01.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/img_topplace02.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/img_topplace03.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/img_topplace01.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/img_topplace02.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace01.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace02.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace03.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace01.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace02.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace03.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace01.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_topplace02.jpg" alt=""></a></li>
                 </ul>
             </div> -->
 
@@ -205,6 +206,11 @@
                 </div>
             </section>
 
+            <section class="section" id ="skills2" >
+                <canvas height="70%" id = "myChart" class = "skill_chart">
+                </canvas>
+            </section>
+
             <section class="section" id="contact">
                 <dl>
                     <dt>이름</dt>
@@ -231,7 +237,7 @@
         </div>
 
         <div class="gotop">
-            <img src="img/ico_totop_mo.png" alt="맨위로">
+            <img src="images/ico_totop_mo.png" alt="맨위로">
         </div>
 
 
@@ -249,6 +255,11 @@
     <script src="js/slick.min.js"></script>
     <!-- <script src="js/myscript.js"></script> -->
     <script src="js/myjquery.js"></script>
+
+    <!-- 스킬2차트 -->
+    <script>
+        
+    </script>
 </body>
 
 </html>

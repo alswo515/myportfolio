@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.row{
+    max-width:1346px;
+    margin:0 auto;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    height: 176px;
+    padding-bottom: 35px;
+    background-color :#dcdcdc;
+}
+
+#header #logo{
+    display: inline-block;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#header #logo img{
+    max-width: 200px;
+}
+
+
+#header .openNav{
+display: none;
+}
+
+#header .closeNav{
+display: none;
+}
+
+
+#header #nav {
+    float: right;
+    /* padding-bottom: 30px;
+    padding-top: 100px;
+    padding-right:150px; */
+}
+
+#header #nav ul li{
+    float: left;
+    padding-right: 30px;
+}
+
+#header #nav ul li a{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#section-outer {
+    height: 300px;
+}
+
+#section-outer #section {
+    height: 300px;
+}
+
+#section-outer #section .slide-outer {
+    height: 300px;
+}
+
+#section-outer #section .slide-inner {
+    height: 300px;
+}
+#section_outer #section .slide-inner .slide1{
+    height: 300px;
+    background-color: aqua;
+}
+
+#section_outer #section .slide-inner .slide2{
+    background: url(../images/외부광고판.jpg) no-repeat;
+    background-position: bottom;
+    height: 300px;
+}
+#section_outer #section .slide-inner .slide2 img{
+    height: 300px;
+}
+
+#section_outer #section .slide-inner .slide3{
+    background: url(../images/우산리뉴얼.jpg);
+    background-position: top;
+    height: 300px;
+}
+
+#section_outer #section .slide-inner .slide3 img{
+    height: 100%;
+}
+
